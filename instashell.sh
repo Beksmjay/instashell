@@ -1,5 +1,5 @@
 #!/bin/bash
-# Coded by @thelinuxchoice (Instagram)
+# Coded by @kenswqq (Instagram)
 checkroot() {
 if [[ "$(id -u)" -ne 0 ]]; then
     printf "\e[1;77mPlease, run this program as root!\n\e[0m"
@@ -22,7 +22,7 @@ printf "\n"
 
 banner
 checkroot
-read -p $'\e[1;92mUsername account: \e[0m' user
+read -p $'\e[1;92mUsername account:kenswqq \e[0m' user
 read -p $'\e[1;92mPassword List: \e[0m' wl_pass
 
 checktor() {
@@ -43,7 +43,7 @@ killall -HUP tor
 sleep 3
 
 }
-
+[ 
 string8=$(cat /dev/urandom | tr -dc 'az0-9' | fold -w 8 | head -n 1)
 string4=$(cat /dev/urandom | tr -dc 'az0-9' | fold -w 4 | head -n 1)
 string12=$(cat /dev/urandom | tr -dc 'az0-9' | fold -w 12 | head -n 1)
